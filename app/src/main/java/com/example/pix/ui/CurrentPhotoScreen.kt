@@ -18,7 +18,7 @@ fun CurrentPhotoScreen(viewModel: MainViewModel) {
         AsyncImage(
             model = viewModel.currentUrl,
             contentDescription = "",
-            placeholder = painterResource(id = R.drawable.back), // Replace with your placeholder drawable
+            placeholder = painterResource(id = R.drawable.back),
             error = painterResource(id = R.drawable.ic_launcher_foreground),
             modifier = Modifier.align(Alignment.Center).fillMaxSize().zoomable(rememberZoomableState())
         )

@@ -7,7 +7,6 @@ import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
@@ -27,8 +26,8 @@ fun PhotosScreen(viewModel: MainViewModel, navHostController: NavHostController)
                 },
                 model = photo.toEntity("q").url,
                 contentDescription = "Example Image",
-                placeholder = painterResource(id = R.drawable.back), // Replace with your placeholder drawable
-                error = painterResource(id = R.drawable.ic_launcher_foreground)// Replace with your error drawable
+                placeholder = painterResource(id = R.drawable.back),
+                error = painterResource(id = R.drawable.ic_launcher_foreground)
             )
 
             Log.i("fawfawf", photo.toEntity("q").url)

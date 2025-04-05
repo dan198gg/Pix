@@ -6,7 +6,6 @@ import com.example.pix.data.flickr.FlickrRetrofit
 import com.example.pix.data.repos.PixRepository
 import com.example.pix.domain.reposimpl.PixRepositoryImpl
 import com.example.pix.ui.MainViewModel
-import org.koin.core.module.dsl.viewModel
 import org.koin.core.module.dsl.viewModelOf
 import org.koin.dsl.module
 
